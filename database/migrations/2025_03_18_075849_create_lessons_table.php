@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('lesson_detail');
-            $table->string('video_url');
+            $table->string('video_url')->nullable();
             $table->boolean('is_available')->default(false);
             $table->timestamps();
         });

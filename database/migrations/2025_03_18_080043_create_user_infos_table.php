@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('phone');
             $table->text('address');
             $table->string('dob');
-            $table->string('nrc');
-            $table->string('edu_background');
-            $table->string('profile_photo');
+            $table->string('nrc')->nullable();
+            $table->string('edu_background')->nullable();
+            $table->string('profile_photo')->nullable();
             $table->timestamps();
         });
     }

@@ -9,4 +9,6 @@ class UserInfo extends Model
 {
     /** @use HasFactory<\Database\Factories\UserInfoFactory> */
     use HasFactory;
+
+    protected $guarded = [];
 }

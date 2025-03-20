@@ -9,4 +9,6 @@ class SocialLink extends Model
 {
     /** @use HasFactory<\Database\Factories\SocialLinkFactory> */
     use HasFactory;
+
+    protected $guarded = [];
 }
